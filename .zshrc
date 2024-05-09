@@ -27,17 +27,17 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ----- Haskell -----
-#
+
 source ~/.ghcup/env
 
 # ------ NVM --------
-#
+
 export NVM_DIR="/Users/jv/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # ----- Python env -----
-#
+
 eval "$(pyenv init -)"
 
 # ---- FZF -----
@@ -74,7 +74,7 @@ _fzf_compgen_dir() {
 }
 
 # --- FZF-GIT ----
-#
+
 source ~/.fzf-git.sh/fzf-git.sh
 
 # configure fzf preview with bat and eza
@@ -105,7 +105,7 @@ export BAT_THEME=tokyonight_night
 
 # ---- Eza (better ls) -----
 
-alias ls="eza --color=always --long --icons=always --no-time --no-user --no-permissions --no-filesize"
+alias ls="eza --color=always --long --icons=always --no-time --no-user --no-permissions" #--no-filesize"
 
 # ---- TheFuck ----
 
